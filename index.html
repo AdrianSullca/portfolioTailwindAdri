@@ -3,84 +3,134 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log In</title>
+    <title>Enhanced Responsive Webpage Example</title>
     <script type="module" src="./src/js/main.js"></script>
   </head>
-
-  <body class="bg-gray-50 flex items-center justify-center h-screen">
-    <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-sm">
-      <!-- Centered Image -->
-      <div class="flex justify-center mb-4">
-        <img src="../src/assets/user_icon.png" alt="User Icon" class="w-24" />
+  <body class="">
+    <nav>
+      <div class="py-2">
+        <div class="flex justify-center gap-14 font-bold text-blue-600">
+          <a href="#" class="hidden sm:block w-15">Sobre mi</a>
+          <a href="#" class="hidden sm:block w-15">Proyectos</a>
+          <a href="#" class="w-15">
+            <img class="w-7" src="./src/assets/logoAd.svg" alt="" />
+          </a>
+          <a href="#" class="hidden sm:block w-15">Curriculum</a>
+          <a href="#" class="hidden sm:block w-15">Contacto</a>
+        </div>
       </div>
+    </nav>
 
-      <form class="space-y-4">
-        <!-- Email -->
-        <div>
-          <label for="email" class="block text-sm font-medium mb-1"
-            >Email</label
+    <section>
+      <div class="py-20 px-2">
+        <p class="text-2xl text-center font-bold sm:text-3xl">
+          Adrian Alexander Sullca
+        </p>
+        <p class="text-center text-base text-blue-600 sm:text-lg">
+          Desarrollador de Aplicaciones Web
+        </p>
+        <div
+          class="flex flex-col gap-2 mt-3 items-center sm:flex-row sm:justify-center"
+        >
+          <button
+            class="bg-blue-600 rounded-md px-6 py-1 text-white text-sm sm:px-6 sm:py-1 sm:text-base"
           >
-          <input
-            id="email"
-            type="email"
-            placeholder="Email"
-            required
-            class="w-full bg-gray-100 p-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
-          />
+            GitHub
+          </button>
+          <button
+            class="bg-blue-600 rounded-md px-6 py-1 text-white text-sm sm:px-6 sm:py-1 sm:text-base"
+          >
+            Linkdn
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-6">
+      <p class="text-blue-600 font-bold text-center text-base md:text-lg">PROYECTOS</p>
+      <div class="grid grid-rows-auto gap-4 mx-3">
+        <div
+          class="bg-white px-5 py-2 sm:grid sm:grid-cols-2 sm:max-w-3xl sm:max sm:gap-9 m-auto"
+        >
+          <div class="sm:order-last">
+            <h2 class="font-bold text-base md:text-lg text-blue-600">
+              Proyecto en JavaScript
+            </h2>
+            <p class="text-sm md:text-base text-justify">
+              Aplicacion pequeña sobre un CRUD de citas medicas en los que las
+              usuarios pueden iniciar sesion o registrarse en la aplicacion.
+              Aplicacion desarrollada en JAVASCRIPT.
+            </p>
+          </div>
+          <div class="sm:order-first">
+            <img
+              class="rounded-lg w-full max-h-32 object-cover"
+              src="./src/assets/javascript.png"
+              alt="Featured Item 1"
+            />
+          </div>
         </div>
 
-        <!-- Password -->
-        <div>
-          <label for="password" class="block text-sm font-medium mb-1"
-            >Password</label
-          >
-          <input
-            id="password"
-            type="password"
-            placeholder="Password"
-            required
-            class="w-full bg-gray-100 p-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
-          />
+        <div
+          class="bg-white px-5 py-2 sm:grid sm:grid-cols-2 sm:max-w-3xl sm:max sm:gap-9 m-auto"
+        >
+          <div>
+            <h2 class="font-bold text-base md:text-lg text-blue-600">Proyecto en JAVA</h2>
+            <p class="text-sm md:text-base text-justify">
+              Aplicacion pequeña sobre un CRUD de citas medicas en los que las
+              usuarios pueden iniciar sesion o registrarse en la aplicacion.
+              Aplicacion desarrollada en JAVA
+            </p>
+          </div>
+          <div>
+            <img
+              class="mt-3 sm:my-2 rounded-lg w-full max-h-32 object-cover"
+              src="./src/assets/java.jpg"
+              alt="Featured Item 1"
+            />
+          </div>
         </div>
 
-        <!-- Remember Me Checkbox -->
-        <div class="flex items-center">
-          <input id="remember" type="checkbox" class="mr-2" />
-          <label for="remember" class="text-sm">Remember me</label>
+        <div
+          class="bg-white px-5 py-2 sm:grid sm:grid-cols-2 sm:max-w-3xl sm:max sm:gap-9 m-auto"
+        >
+          <div class="sm:order-last">
+            <h2 class="font-bold text-base md:text-lg text-blue-600">Proyecto en PHP</h2>
+            <p class="text-sm md:text-base text-justify">
+              Aplicacion pequeña sobre un CRUD de citas medicas en los que las
+              usuarios pueden iniciar sesion o registrarse en la aplicacion.
+              Aplicacion desarrollada en PHP
+            </p>
+          </div>
+          <div class="sm:order-first">
+            <img
+              class="mt-3 sm:my-2 rounded-lg w-full max-h-32 object-cover"
+              src="./src/assets/php.png"
+              alt="Featured Item 1"
+            />
+          </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Centered Buttons -->
-        <div class="flex justify-between space-x-2">
-          <a
-            href="/src/pages/register.html"
-            class="h-8 w-full bg-blue-500 text-white text-sm font-medium rounded hover:bg-blue-600 flex items-center justify-center"
-          >
-            Register
-          </a>
-          <a
-            href="/src/pages/infoApp.html"
-            class="h-8 w-full bg-blue-500 text-white text-sm font-medium rounded hover:bg-blue-600 flex items-center justify-center"
-          >
-            Log In
-          </a>
+    <!-- Footer -->
+    <section class="">
+      <div class="w-full flex flex-col gap-1 my-5 mt-10 sm:mt-15">
+        <div class="flex flex-row justify-center gap-5">
+          <img src="./src/assets/icons8-linkedin.svg" alt="" class="w-8" />
+          <img src="./src/assets/icons8-github.svg" alt="" class="w-8" />
+          <img src="./src/assets/icons8-gmail-nuevo.svg" alt="" class="w-8" />
+          <img src="./src/assets/icons8-llamada-50.png" alt="" class="w-8" />
         </div>
-
-        <!-- Social Media Buttons -->
-        <div class="flex flex-col items-center space-y-2 mt-4">
-          <a
-            href="https://www.google.com/webhp?hl=es&sa=X&ved=0ahUKEwiMguy70qKJAxVR0AIHHZ_xASQQPAgI&safe=active&ssui=on"
-            class="h-8 w-full bg-blue-500 text-white text-sm font-medium rounded-full hover:bg-blue-600 flex items-center justify-center"
-          >
-            Log in with Google
-          </a>
-          <a
-            href="https://github.com/login"
-            class="h-8 w-full bg-gray-800 text-white text-sm font-medium rounded-full hover:bg-gray-900 flex items-center justify-center"
-          >
-            Log in with GitHub
-          </a>
+        <div class="">
+          <p class="text-center text-blue-700 font-bold mt-0">
+            adrian.sullca@cirvianum.cat
+          </p>
+          <p class="text-center text-blue-700 font-bold mt-[-8px]">
+            © 2024 Todos los derechos reservados.
+          </p>
         </div>
-      </form>
-    </div>
+      </div>
+    </section>
   </body>
 </html>
